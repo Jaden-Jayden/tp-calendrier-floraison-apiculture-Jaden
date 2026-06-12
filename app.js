@@ -12,7 +12,7 @@ async function get() {
 }
 function postExtension({ image, name, description }) {
 	const article = document.createElement("article");
-	const img = document.createElement("img");
+	const imge = document.createElement("img");
 	const div = document.createElement("div");
 	const divEtoile = document.createElement("div");
 	const h2 = document.createElement("h3");
@@ -25,13 +25,14 @@ function postExtension({ image, name, description }) {
 	const divpp = document.createElement("div");
 	const Pollen = document.createElement("h2");
 
-	img.src = image;
+	imge.src = image;
 	h2.textContent = name;
 	p.textContent = description;
 	Propolis.textContent = "Propolis";
 	Nectar.textContent = "Nectar";
 	Pollen.textContent = "Pollen";
-	img.classList.add("img");
+
+	imge.classList.add("img");
 	divEtoile.classList.add("divEtoile");
 	div.classList.add("divArt");
 	h2.classList.add("h3Art");
@@ -44,7 +45,7 @@ function postExtension({ image, name, description }) {
 	divpp.classList.add("propValue");
 	Pollen.classList.add("pProp");
 
-	article.append(img, div);
+	article.append(imge, div);
 	div.append(h2, p, pnp);
 	pnp.append(divp, divn, divpp);
 	divp.append(Propolis);
